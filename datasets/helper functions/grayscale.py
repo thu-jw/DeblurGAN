@@ -20,7 +20,7 @@ splits = os.listdir(args.fold_A)
 for sp in splits:
     img_fold_A = os.path.join(args.fold_A, sp)
     img_list = os.listdir(img_fold_A)
-	
+
     num_imgs = min(args.num_imgs, len(img_list))
     print('split = %s, use %d/%d images' % (sp, num_imgs, len(img_list)))
     img_fold_B = os.path.join(args.fold_B, sp)
@@ -33,7 +33,7 @@ for sp in splits:
 
         if os.path.isfile(path_A):
             name_B = name_A
-			
+
             path_B = os.path.join(img_fold_B, name_B)
             im_A = cv2.imread(path_A, 0)
             cv2.imwrite(path_B, im_A)

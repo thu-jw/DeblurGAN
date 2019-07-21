@@ -13,7 +13,7 @@ display_winsize: 256
 epoch_count: 1
 fineSize: 256
 gan_type: wgan-gp
-gpu_ids: [0]
+gpu_ids: []
 identity: 0.0
 input_nc: 3
 isTrain: True
